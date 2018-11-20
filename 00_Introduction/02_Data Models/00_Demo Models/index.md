@@ -22,7 +22,7 @@ type Gopher struct {
     UpdatedAt time.Time `json:"-"`
 }
 
-func (gopher *Gopher) FindById() error {
+func (gopher *Gopher) FindByID() error {
 	return db.Where("id = ?", gopher.ID).First(&gopher).Error
 }
 
@@ -52,7 +52,7 @@ type User struct {
     FullName string `json:"-"`
 }
 
-func (user *User) FindById() error {
+func (user *User) FindByID() error {
     user.ID = 1
     user.FullName = "Demo User"
 	return nil
