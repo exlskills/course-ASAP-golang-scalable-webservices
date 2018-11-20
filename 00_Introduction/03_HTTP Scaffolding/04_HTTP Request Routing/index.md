@@ -37,3 +37,7 @@ func CreateRouter() http.Handler {
 }
 
 ```
+
+### Update deps
+
+Since we added new dependencies in this file, remember to run `dep ensure -v` again to update our deps.
