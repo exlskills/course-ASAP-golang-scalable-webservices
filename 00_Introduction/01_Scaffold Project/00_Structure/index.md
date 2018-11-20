@@ -24,8 +24,8 @@ migrations/ # This is where would put our SQL DB migrations
     1_init.down.sql # Init down (revert init up)
 
 seed/ # SQL Seed files (different from migrations in that it's not used for production -- only dev!)
-    1_seed.up.sql
-    1_seed.down.sql
+    1_seed.up.sql # Seed up db
+    1_seed.down.sql # Delete seeded data
 
 reqctx/
     reqctx.go # Manage our request context data (not stateful sessions!)
