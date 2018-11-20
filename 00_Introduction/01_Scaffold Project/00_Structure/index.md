@@ -33,12 +33,19 @@ reqctx/
 routes/
     routes.go # Spec out our router configuration
 
+Dockerfile # Production Dockerfile for deployment
 main.go # Entrypoint ('main function')
 ```
 
+### Scaffolding our Project
+
+We will create these files and directories as we go, however, you can also create the structure ahead of time
+
 ### Variations
 
-Depending on your project, you might have some variations on this structure, such as:
+Depending on your project, you might have some common variations on this structure, such as:
+
+* To setup unit tests, you would have *_test.go` variations of the files for which you have unit testing
 
 * No-SQL where you would remove the `migrations` directory
 

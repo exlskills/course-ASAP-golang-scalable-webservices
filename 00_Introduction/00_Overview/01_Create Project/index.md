@@ -24,6 +24,9 @@ echo '# Binaries for programs and plugins
 *.so
 *.dylib
 
+# GoLand IDE files
+.idea
+
 # Dependencies (more on this later)
 vendor/
 
