@@ -59,3 +59,7 @@ Remember to run `dep ensure -v` make sure that all of deps are still in sync.
 ### Build and run via Docker
 
 `./docker-build.sh && ./docker-run.sh`
+
+### Project Source Code (Reference)
+
+To compare your code, you may find the full reference source on GitHub <a rel="noopener" target="_blank" href="https://github.com/exlskills/demo-go-webservice">here</a>.

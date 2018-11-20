@@ -88,6 +88,10 @@ Commit our changes: `git commit -m"Init go project"`
 
 Note: if you want to push to a remote, now would be the time to add it and start pushing!
 
+### Project Source Code
+
+For reference (or lazy typists!) you may find the full source on GitHub <a rel="noopener" target="_blank" href="https://github.com/exlskills/demo-go-webservice">here</a>.
+
 ### Intro Wrap Up
 
 We now have a working minimal Go project that will form the basis of our web service and all related files. Now is a good time to open this up in an IDE as from here on out, there won't be such detailed explanations of steps like 'build', 'run', or 'create a go file'. It will be assumed that if you don't already know, that you can use this as a reference, or find a resource in the [EXLskills A$AP Go Open Course](https://exlskills.com/learn-en/courses/aap-learn-go-golang--learn_golang_asap)!
