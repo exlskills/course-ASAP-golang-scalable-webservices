@@ -1,11 +1,11 @@
 # This is the *unique* ID of your course
-url_name: learn_golang_asap
-display_name: Scalable Web Services with Go & Docker Intro
+url_name: go_docker_web_asap
+display_name: A$AP Scalable Web Services with Go & Docker
 org: EXLskills
 # This is the *unique* ID of your course (again) because we're maintaining compatability with other course formats. If you intend to use this with OLX or another course host, then it can have another value.
 weight: 10000
-course: go_docker_srvc_intro
-course_image: https://s3-us-west-2.amazonaws.com/exlskills-course-logos/golang-gopher-typing.gif
+course: go_docker_web_asap
+course_image: https://s3-us-west-2.amazonaws.com/exlskills-course-logos/gopher-doing-weights.gif
 language: en
 est_minutes: 45
 primary_topic: Go
@@ -15,10 +15,10 @@ topics:
   - GoLang
   - Web Services
   - Docker
-headline: Build & Deploy Your First Go Web Service with Docker!
+headline: Build & Deploy Your First Go Web Service with Docker A$AP!
 description: |2
-  This is the EXLskills free and open-source A$AP Learn GoLang Course! It's a highly-accelerated open course that's best-suited for people with a bit of background in software engineering to quickly pick up Go, learn the essential best practices, and hit the ground running!
-  After this course, you'll be able to build basic Go applications in addition to lightweight webservers, highly-concurrent programs, and reusable libraries in Go that you can share with other developers!
+  This is the EXLskills free and open-source A$AP Scalable Web Services with Go & Docker Course! It's a highly-accelerated open course that's best-suited for people with a bit of background in software engineering to quickly pick up Go, learn the essential best practices, and hit the ground running!
+  After this course, you'll be able to build lightweight, scalable, and idiomatic web services that connect to relational (SQL) databases, consider auth, and serve performant JSON REST APIs.
   For further practice, we recommend checking out our Go [Guided Projects](https://exlskills.com/learn-en/projects) that will give you access to a professional Go developer, detailed documentation, and real-world tasks that you can work on to go from the basics of Go, into building production apps.
 info_md: |2
   This is your course's long-form markdown info text. This will be shown to users in the info tab of your course.
