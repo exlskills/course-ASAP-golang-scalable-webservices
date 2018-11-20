@@ -1,6 +1,6 @@
 # This is the *unique* ID of your course
 url_name: go_docker_web_asap
-display_name: A$AP Scalable Web Services with Go & Docker
+display_name: A$AP Scalable Web Services with Go & Docker 🚀
 org: EXLskills
 # This is the *unique* ID of your course (again) because we're maintaining compatability with other course formats. If you intend to use this with OLX or another course host, then it can have another value.
 weight: 10000
