@@ -1,0 +1,25 @@
+### Your Journey with Go
+
+Google's Go Programming language (often called GoLang for clarity), is one of today's fastest-growing languages and has one of the highest developer satisifaction ratings in the industry -- Go developers love coding in Go!
+
+Combined with Docker, it creates an expressive, portable, and scalable foundation for building production web services -- and that's what we're going to get a quick introduction to in this course!
+
+### Prerequisites
+
+Prior to starting this course, you should have:
+
+* Basic understanding of what Go, REST APIs, JSON, and Docker are (as well as their use-cases)
+
+* Familiarity with a C++ or Java-like programming language (this will make reading Go pretty easy for you)
+
+* Basic POSIX shell/bash familiarity (i.e., you know what `cd`, `mkdir`, et al. do)
+
+* Go installed (https://golang.org/dl/). These demos use Go 1.11.2, however, any recent Go 1.X.X version should work
+
+* Go `dep` package manager installed (https://github.com/golang/dep)
+
+* Docker installed (https://docs.docker.com/install/). These demos use docker `18.06.1-ce`, but any recent installation should work just fine
+
+### Ready to Build a Scalable Web Service with Docker and Go?!
+
+Prepare for 🚀 with this Open Course from EXLskills! It's going to be FAST, so let's start hacking!
