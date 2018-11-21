@@ -8,7 +8,7 @@ To create a standard lightweight deploy for our project, we're going to use Dock
 
 This will build our Docker image. It goes into `Dockerfile` in our project root.
 
-```bash
+```dockerfile
 # Part 1 (Builder)
 FROM golang:1.11-alpine3.7 as gobuilder
 

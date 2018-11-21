@@ -8,7 +8,7 @@ For this purpose, we will use environment variables exclusively, as this is the 
 
 You can always get an env var with `os.GetEnv("VAR_NAME")` in Go, however, for managing an entire config struct with defaults, we will use a library called 'envconfig' available [here](https://github.com/exlinc/golang-utils/tree/master/envconfig).
 
-### Loggging
+### Logging
 
 We'll cover logging more later, however, you will notice that we'll use the `logrus` 3rd party logger for sending structured logs to our `stdout`
 
