@@ -27,14 +27,25 @@ seed/ # SQL Seed files (different from migrations in that it's not used for prod
     1_seed.up.sql # Seed up db
     1_seed.down.sql # Delete seeded data
 
+dockersql/ # SQL Setup files for docker-compose mysql DB (when using migration tool in later courses/projects, this won't be necessary)
+    1_init.up.sql # Setup tables in docker mysql
+    2_seed.up.sql # Seed up db in docker mysql
+
 reqctx/
     reqctx.go # Manage our request context data (not stateful sessions!)
 
 routes/
     routes.go # Spec out our router configuration
 
-Dockerfile # Production Dockerfile for deployment
+
+Dockerfile # Production Dockerfile for deployment (also used for service image in docker-compose.yml)
+docker-compose.yml # Development docker compose for seamless setup
+
 main.go # Entrypoint ('main function')
+Gopkg.lock # Lock file for go dep tool (package management)
+Gopkg.toml # Config file for go dep tool (package management)
+
+README.md # Gotta have a README.md! (You can find this in the reference source on GitHub, not used in this course)
 ```
 
 ### Scaffolding our Project
