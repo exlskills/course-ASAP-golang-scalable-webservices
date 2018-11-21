@@ -31,7 +31,7 @@ echo '# Binaries for programs and plugins
 vendor/
 
 # Ignore our binary
-./demo-go-webservice
+demo-go-webservice
 
 # Test binary, build with `go test -c`
 *.test
