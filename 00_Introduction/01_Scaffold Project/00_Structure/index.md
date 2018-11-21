@@ -56,7 +56,7 @@ We will create these files and directories as we go, however, you can also creat
 
 Depending on your project, you might have some common variations on this structure, such as:
 
-* To setup unit tests, you would have *_test.go` variations of the files for which you have unit testing
+* To setup unit tests, you would have `*_test.go` variations of the files for which you have unit testing
 
 * No-SQL where you would remove the `migrations` directory
 
