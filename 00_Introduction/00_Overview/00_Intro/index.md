@@ -22,6 +22,10 @@ Prior to starting this course, you should have:
 
 * Docker compose installed (https://docs.docker.com/compose/install/). Note that this might come separately on some Docker installations
 
+### Reference Full Code
+
+For reference (or lazy typists!) you may find the full reference source of this project on GitHub <a rel="noopener" target="_blank" href="https://github.com/exlskills/demo-go-webservice">here</a>.
+
 ### Ready to Build a Scalable Web Service with Docker and Go?!
 
 Prepare for 🚀 with this Open Course from EXLskills! It's going to be FAST, so let's start hacking!
