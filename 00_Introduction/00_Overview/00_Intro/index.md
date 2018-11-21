@@ -20,6 +20,8 @@ Prior to starting this course, you should have:
 
 * Docker installed (https://docs.docker.com/install/). These demos use docker `18.06.1-ce`, but any recent installation should work just fine
 
+* Docker compose installed (https://docs.docker.com/compose/install/). Note that this might come separately on some Docker installations
+
 ### Ready to Build a Scalable Web Service with Docker and Go?!
 
 Prepare for 🚀 with this Open Course from EXLskills! It's going to be FAST, so let's start hacking!

@@ -58,7 +58,11 @@ Remember to run `dep ensure -v` make sure that all of deps are still in sync.
 
 ### Build and run via Docker
 
-`./docker-build.sh && ./docker-run.sh`
+`docker-compose up -d # Will build if you haven't already built`
+
+### Running locally
+
+The main constraint for running locally is setting up the MySQL DB on your box (or remote box). You will need to create a database, find/create a user for that database, run the `migrations/*.up.sql` and then the `seed/*.up.sql` scripts (in order). Once your DB is prepared, you will need to setup the connection string env var and run the service roughly like so: `GDEMO_DB_PATH="YourMySQLUser:YourMySQLPwd@tcp(localhost:3306)/TheNameOfYourDatabase?charset=utf8mb4&parseTime=True" go run main.go`. Running locally is not really meant to be in scope of this course and therefore isn't really supported, however, you should definitely try it and enjoy debugging the various errors that you may/not encounter!
 
 ### Project Source Code (Reference)
 

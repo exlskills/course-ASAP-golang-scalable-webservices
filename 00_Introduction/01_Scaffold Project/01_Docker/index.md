@@ -10,8 +10,9 @@ This will build our Docker image. It goes into `Dockerfile` in our project root.
 
 ```bash
 # Part 1 (Builder)
-FROM golang:1.11 as gobuilder
+FROM golang:1.11-alpine3.7 as gobuilder
 
+RUN apk add --no-cache curl git
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 # TODO Replace `exlskills` with your GitHub username!
@@ -36,7 +37,7 @@ EXPOSE 3333
 
 ```
 
-#### .dockerignore
+#### Docker Ignore
 
 This is the file that Docker uses to know which directories to leave out of the build. It goes into `.dockerignore` in our project root.
 
@@ -45,24 +46,46 @@ This is the file that Docker uses to know which directories to leave out of the 
 vendor/
 ```
 
-### Convenience Scripts
+#### Docker Compose
 
-For the following `.sh` files remember to make them executable with `chmod +x your-script.sh`
+In order to streamline our DB setup and connection -- as well as making mimicing a production setup easier, we will use docker compose to build/start/restart our service+DB. Update your `docker-compose.yml` file to be:
 
-#### docker-build.sh
+```yaml
+version: '3.1'
 
-Build our docker image and tag it
-
-```bash
-echo 'Building docker image ...'
-docker build -t demo-go-webservice .
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "3333:3333"
+    environment:
+      - GDEMO_DB_PATH=root:password@tcp(db:3306)/demogowsdb?charset=utf8mb4&parseTime=True
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=demogowsdb
+    volumes:
+      - ./dockersql:/docker-entrypoint-initdb.d
 ```
 
-#### docker-run.sh
+### Docker Compose Commands (Future Reference)
 
-Run our docker image locally in 'interactive' mode so that we can view the log output
+NOTE: These won't work/do anything right now since our project isn't fully setup yet!
 
-```bash
-echo "Running Docker image (don't forget about building!) ..."
-docker run -it --rm -p 3333:3333 demo-go-webservice
-```
+#### Build
+
+`docker-compose build`
+
+#### Run
+
+`docker-compose -d up # -d option is for 'detatched' mode, remove to run it in the foreground`
+
+#### Stop
+
+`docker-compose down`
+
+#### Follow Logs
+
+`docker-compose logs -f # -f option is for 'follow' mode, to just get the last n lines, remove this option`
