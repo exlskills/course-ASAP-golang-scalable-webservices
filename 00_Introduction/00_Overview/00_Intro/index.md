@@ -14,13 +14,13 @@ Prior to starting this course, you should have:
 
 * Basic POSIX shell/bash familiarity (i.e., you know what `cd`, `mkdir`, et al. do)
 
-* Go installed (https://golang.org/dl/). These demos use Go 1.11.2, however, any recent Go 1.X.X version should work
+* Go installed (https://golang.org/dl). These demos use Go 1.11.2, however, any recent Go 1.X.X version should work
 
 * Go `dep` package manager installed (https://github.com/golang/dep)
 
-* Docker installed (https://docs.docker.com/install/). These demos use docker `18.06.1-ce`, but any recent installation should work just fine
+* Docker installed (https://docs.docker.com/install). These demos use docker `18.06.1-ce`, but any recent installation should work just fine
 
-* Docker compose installed (https://docs.docker.com/compose/install/). Note that this might come separately on some Docker installations
+* Docker compose installed (https://docs.docker.com/compose/install). Note that this might come separately on some Docker installations
 
 ### Reference Full Code
 
