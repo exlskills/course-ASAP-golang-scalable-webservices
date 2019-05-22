@@ -14,7 +14,7 @@ Prior to starting this course, you should have:
 
 * Basic POSIX shell/bash familiarity (i.e., you know what `cd`, `mkdir`, et al. do)
 
-* Go installed [from officlal Go site](https://golang.org/dl). These demos use Go 1.11.2, however, any recent Go 1.X.X version should work
+* Go installed [from official Go site](https://golang.org/dl). These demos use Go 1.11.2, however, any recent Go 1.X.X version should work
 
 * Go `dep` package manager installed [from official Go project](https://github.com/golang/dep)
 
